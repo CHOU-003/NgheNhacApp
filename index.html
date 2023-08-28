@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play List Music</title>
+    <link rel="stylesheet" href="./asset/style.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.12.0/css/all.min.css">
+<body>
+
+<div class="player">
+ <div class="dasboard">
+    <div class="container">
+        <div class="icon">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+        <div>
+            <header>
+                <h4>Now Playing:</h4>
+                <h2 id="songhead">String 57th & 9th</h2>
+            </header>
+        </div>
+        <div class="icon btn-settings">
+            <i class="fas fa-cog"></i>
+        </div>
+    </div>
+        
+
+    <div class="cd">
+        <div class="cd-thumb">
+            <img class="img" src="./img/Cupid.jpg" alt="GEE">
+        </div>
+    </div>
+    <div class="line">
+        <input type="range" id="progress" class="progress" value="0" step="1" min="0" max="100">
+        <audio id="audio" src=""></audio>
+    </div>
+    
+    <div class="control">
+        <div class="btn btn-repeat">
+            <i class="fas fa-redo"></i>
+        </div>
+        <div class="btn btn-prev">
+            <i class="fas fa-step-backward"></i>
+        </div>
+        <div class="btn btn-ground btn-toggle-play">
+            <i id="pause" class="fas fa-pause"></i>
+            <i id="play" class="fas fa-play"></i>
+        </div>
+        <div class="btn btn-next">
+            <i class="fas fa-step-forward"></i>
+        </div>
+        <div class="btn btn-random">
+            <i class="fas fa-random"></i>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="play-list">
+        
+    </div>
+
+</div>
+
+    <div class="model-setting js_model">
+        <div class="model__overlay"></div>
+        <div class="model__container">
+            <div class="model__body">
+                <div class="btn-close"><i class="close__icon fas fa-times"></i></div>
+                <div class="setting__text">
+                    <h1>SETTING FOR APP</h1>
+                </div>
+
+                <div class="setting__fun">
+                    <div class="setting__item">
+                        <p class="p__text">Back ground: </p><br>
+                        <label for="cam-vang">Orange-Yellow</label>
+                        <input id="BR1" type="radio" name="background">
+                        <label for="cam-vang">Black-Green</label>
+                        <input id="BR2" type="radio" name="background">
+                        <label for="cam-vang">Purple-Pink</label>
+                        <input id="BR3" type="radio" name="background">
+                        <label for="cam-vang">Blue-White</label>
+                        <input id="BR4" type="radio" name="background">
+                    </div>
+                    <div class="setting__language">
+                        <p class="p__text">Language: </p>
+                        <select name="Language" id="lan">
+                            <option value="English">English</option>
+                            <option value="Chinese">Chinese</option>
+                            <option value="Japanese">Japanese</option>
+                            <option value="French">French</option>
+                            <option value="German">Vietnamese</option>
+                        </select>
+                    </div>
+                    <div class="setting__theme">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./asset/mian.js"></script>
+</body>
+</html>
